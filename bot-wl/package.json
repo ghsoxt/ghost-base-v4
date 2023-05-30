@@ -1,0 +1,25 @@
+{
+  "name": "by-balah",
+  "version": "1.0.0",
+  "description": "Um bot feito em slash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Meno Toddy",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "glob": "^8.0.3",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "quick.db": "^9.0.6",
+    "sourcebin_js": "^0.0.3-ignore",
+    "twemoji-parser": "^14.0.0",
+    "util": "^0.12.4"
+  }
+}
