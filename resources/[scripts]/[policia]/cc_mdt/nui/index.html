@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        <meta charset="UTF-8">
+        <title>Carioca Development - cc_mdt</title>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!-- Mascara -->
+        <div class="mascara">
+                <div class="blue"></div>
+                <div class="red"></div>
+        </div>
+        <!-- ActionContainer -->
+        <div class="actioncontainer">
+                <img id="tablet-img"
+                        src="https://media.discordapp.net/attachments/776536471195877376/889625660778217552/unknown.png">
+                <div class="background">
+                        <div class="main"></div>
+                        <div class="reflexo"></div>
+                </div>
+        </div>
+        <!-- Instrução Foto -->
+        <div class="photo-wrap">
+                <div class="extra-corners"></div>
+
+                <div class="info-wrap">
+                        <div class="icon-wrap">
+                                <svg width="7" height="16" viewBox="0 0 8 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66667 17.3751H5.33333V8.18758C5.33333 7.46201 4.73625 6.87508 4 6.87508H1.33333C0.597083 6.87508 0 7.46201 0 8.18758C0 8.91315 0.597083 9.46316 1.33333 9.46316H2.66667V17.3382H1.33333C0.597083 17.3382 0 17.9251 0 18.6507C0 19.3762 0.597083 19.9632 1.33333 19.9632H6.66667C7.40292 19.9632 8 19.3762 8 18.6507C8 17.9251 7.40417 17.3751 6.66667 17.3751ZM4 4.25008C5.10458 4.25008 6 3.36865 6 2.28133C6 1.194 5.10417 0.312988 4 0.312988C2.89583 0.312988 2 1.19441 2 2.28174C2 3.36906 2.89542 4.25008 4 4.25008Z"
+                                                fill="white" />
+                                </svg>
+                        </div>
+                        <span>Tire uma foto nítida com face dentre essas limitações;</span>
+                </div>
+                <div class="tips-wrap">
+                        <span class="mouse scroll" id="scroll"><svg width="18" height="42" viewBox="0 0 18 42" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 16.6053V25.3961C0 30.2308 3.95569 34.1869 8.7908 34.1869C13.6255 34.1869 17.5816 30.2312 17.5816 25.3961L17.5812 16.6053C17.5812 11.7706 13.6255 7.81445 8.7904 7.81445C3.9557 7.81445 9.44117e-06 11.7706 9.44117e-06 16.6053H0ZM8.79039 9.76811C12.5508 9.76811 15.6275 12.8449 15.6275 16.6053V25.3961C15.6275 29.1564 12.5508 32.2332 8.79039 32.2332C5.03002 32.2332 1.95325 29.1564 1.95325 25.3961V16.6053C1.95325 12.8449 5.03002 9.76811 8.79039 9.76811Z"
+                                                fill="white" />
+                                        <path d="M8.78935 18.0704C9.32671 18.0704 9.7662 17.6309 9.7662 17.0935V14.1634C9.7662 13.626 9.32672 13.1865 8.78935 13.1865C8.25198 13.1865 7.8125 13.626 7.8125 14.1634V17.0935C7.8129 17.6309 8.25238 18.0704 8.78935 18.0704Z"
+                                                fill="white" />
+                                        <path d="M8.10654 41.7072C8.3019 41.9026 8.54602 42.0001 8.79013 42.0001C9.03424 42.0001 9.27835 41.9026 9.47372 41.7072L11.9157 39.2653C12.3064 38.8745 12.3064 38.2884 11.9157 37.8977C11.5249 37.5069 10.9388 37.5069 10.5481 37.8977L8.79012 39.656L7.03177 37.8977C6.64103 37.5069 6.05492 37.5069 5.66416 37.8977C5.2734 38.2884 5.27342 38.8745 5.66416 39.2653L8.10654 41.7072Z"
+                                                fill="white" />
+                                        <path d="M8.1061 0.293057L5.66415 2.735C5.27341 3.12575 5.27341 3.71185 5.66415 4.10262C5.85952 4.29758 6.10363 4.39547 6.34814 4.39547C6.59226 4.39547 6.83637 4.29798 7.03173 4.10262L8.79008 2.34427L10.5484 4.10262C10.7434 4.29758 10.9875 4.39547 11.2316 4.39547C11.4757 4.39547 11.7198 4.29798 11.9152 4.10262C12.3059 3.71188 12.3059 3.12577 11.9152 2.735L9.47326 0.293057C9.08292 -0.0976856 8.49681 -0.0976856 8.10606 0.293057H8.1061Z"
+                                                fill="white" />
+                                </svg>
+                        </span>
+                        <span class="keyboard backspace">BACKSPACE</span>
+                        <span class="keyboard space">SPACE</span>
+                </div>
+        </div>
+        <!-- Partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                crossorigin="" />
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
+
+        <!-- Cropper CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css"
+                integrity="sha512-+VDbDxc9zesADd49pfvz7CgsOl2xREI/7gnzcdyA9XjuTxLXrdpuz21VVIqc5HPfZji2CypSbxx1lgD7BgBK5g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Cropper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.js"
+                integrity="sha512-ZK6m9vADamSl5fxBPtXw6ho6A4TuX89HUbcfvxa2v2NYNT/7l8yFGJ3JlXyMN4hlNbz0il4k6DvqbIW5CCwqkw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>

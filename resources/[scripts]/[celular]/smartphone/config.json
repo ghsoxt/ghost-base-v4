@@ -1,0 +1,66 @@
+{
+  "token": "Alienigena",
+  "client": {
+    "bankType": "fleeca",
+    "uploadServer": "https://canary.discord.com/api/webhooks/1089634148404178974/G4pCICDnUY6AD2hjFSyN9qXQjZNNP_iVmBMlXkv7YOmY76y25Lmigu8R0hvGy0s_uDw_",
+    "allowUnsafeURL": true,
+    "videoServer": "ws://localhost:8080/",
+    "case": "s20cda",
+    "apps": {
+      "calculator": "https://fivem.jesteriruka.dev/apps/samsung/calculator.webp",
+      "notes": "https://fivem.jesteriruka.dev/apps/samsung/notes.webp",
+      "settings": "https://fivem.jesteriruka.dev/apps/samsung/settings.webp",
+      "contacts": "https://fivem.jesteriruka.dev/apps/samsung/contacts.webp",
+      "sms": "https://fivem.jesteriruka.dev/apps/samsung/sms.webp",
+      "gallery": "https://fivem.jesteriruka.dev/apps/samsung/gallery.webp",
+      "phone": "https://fivem.jesteriruka.dev/apps/samsung/phone.webp",
+      "facetime": "https://fivem.jesteriruka.dev/apps/samsung/facetime.webp"
+  },
+    "isAndroid": true,
+    "useGameClock": false,
+    "phone_template": "XXX-XXX",
+    "backgroundURL": "https://i.pinimg.com/564x/2c/c4/4d/2cc44d4288ce06b5f528eab9abae05e2.jpg",
+    "disabledApps": ["yellowpages"]
+  },
+  "exclusive": {
+    "weazel": {
+      "tags": ["Noticias"],
+      "permission": "Admin"
+    },
+    "casino": {
+      "maxBet": 10000
+    }
+  },
+  "call_mode": "pma-voice",
+  "webhookURL": "https://canary.discord.com/api/webhooks/1089634148404178974/G4pCICDnUY6AD2hjFSyN9qXQjZNNP_iVmBMlXkv7YOmY76y25Lmigu8R0hvGy0s_uDw_",
+  "instagram_verify": "Admin",
+  "instagram_accounts": {
+    "*": 1,
+    "Admin": 2
+  },
+  "moderator": "staff",
+  "item": "celular",
+    "services": [
+        {
+            "name": "Policia",
+            "number": "190",
+            "permission": "Police"
+        },
+        {
+            "name": "Paramédico",
+            "number": "192",
+            "permission": "Paramedic"
+        },
+        {
+            "name": "Mecânico",
+            "number": "0800 042",
+            "permission": "SportRace"
+        },
+        {
+            "name": "Taxi",
+            "number": "0800 075",
+            "permission": "Taxi"
+        }
+    ],
+  "base": "vrpex"
+}
